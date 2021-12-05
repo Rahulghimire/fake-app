@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import "./App.css";
+import Card from "./components/Card";
 
 function App() {
 const [fake,setFake]=useState([]);
@@ -11,28 +12,24 @@ const fakestore = async()=>{
   const jsondata=await response.json();
   setFake(jsondata);
 }
-  return(
-  <>
+  return (
+    <>
     <h2>Welcome to Fake Store</h2>
     <div className="container">
-      {fake.map((values)=>{
-        return(
+    {fake.map((values)=>{
+      return(
         <>
-        <div className="box">
+         <div className="box">
         <div className="content">
-          <h3>{values.title}</h3>
-          <p>{values.description}</p>
-        </div>
-        <img src={values.image}/>
-        <div className="border">
-        <h5>More Details...</h5>
-        </div>
+      <Card title={values.title} description={values.description} image={values.image}/>
+      </div>
       </div>
       </>
-        )
-      })}
+      )
+    })}
     </div>
-    </>
-  )
+</>
+)
 }
 export default App;
+

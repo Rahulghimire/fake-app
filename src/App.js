@@ -25,7 +25,7 @@ const fakestore = async()=>{
         </div>
         <img src={values.image}/>
         <div className="border">
-        <h5>More Details</h5>
+        <h5>More Details...</h5>
         </div>
       </div>
       </>

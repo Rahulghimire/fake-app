@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Card = ({title, description, image}) => {
+const Card = ({id, title, description, image}) => {
     return(
         <>
         <div>
@@ -9,7 +10,7 @@ const Card = ({title, description, image}) => {
               </div>
               <img src={image} alt=""/>
               <div className="border">
-              <h5>More Details...</h5>
+              <Link to ={{pathname:`/products/${id}`}}><button>More Details...</button></Link>
           </div>
           </>
         )

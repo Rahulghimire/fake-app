@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Pacifico&family=Roboto:ital,wght@1,300&display=swap');
-
 body{
   background-color:#1261A0;
   box-sizing: border-box;
@@ -23,7 +22,6 @@ h2{
   flex-wrap: wrap;
 }
 .box{
-  /* background-color: rgb(109, 154, 252); */
   background-color: white;
   border-radius: 5px;
   width: 30%;
@@ -38,33 +36,54 @@ h3{
   font-size: 22px;
 }
 p{
+  /* white-space: wrap; */
   font-family:'Roboto','Oswald',sans-serif; 
   font-weight: 800;
   font-size: 15px;
+  text-align: justify;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 }
 img{
   display: block;
-  width: 200px;;
-  height: 200px;
+  width: 230px;;
+  height: 230px;
   object-fit: contain;
   margin-left: auto;
   margin-right: auto;
 }
-.border{
+button{
+  display: flex;
+  font-size: 15px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  width: 50%;
-  height: 7%;
-  border: 2px solid red;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #81bff1; */
+  background-color:#1261A0; 
+  color: white;
+  text-decoration: none;
 }
-h5{
+/* h5{
+  width: 45%;
+  height: 7%;
   font-size: 20px;
   text-align: center;
   justify-content: center;
-  margin-top: 2px;
+  margin-top: 14px;
+  color: white;
+  background-color: blue;
+} */
+button:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(132, 50, 190, 0.4);
 }
-h5:hover{
-  color: red;
+.details_style{
+  color: white;
+  text-align: center;
+}
+.image{
+  width: 300px;
+  height:300px;
 }
